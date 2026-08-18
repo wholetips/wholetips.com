@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>WholeTips - Free Online Tools</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WholeTips - Tips + Free Tools</title>
 <style>
-body{font-family:Arial;text-align:center;padding:40px;background:#f5f7ff}
-h1{color:#2d5bff}
-a.btn{display:inline-block;background:#2d5bff;color:#fff;padding:15px 30px;border-radius:8px;text-decoration:none;margin:20px;font-size:18px}
-.tool-box{background:#fff;padding:20px;border-radius:12px;max-width:500px;margin:20px auto;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Segoe UI,sans-serif}
+body{background:linear-gradient(135deg,#f0fdfa 0%,#ecfeff 100%);background-attachment:fixed;color:#334155;min-height:100vh}
+header{background:rgba(255,255,255,0.7);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.06);position:sticky;top:0;z-index:10}
+.nav{max-width:1280px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:21px;color:#0f172a;text-decoration:none}.logo span{color:#0d9488}
+.menu{display:flex;gap:24px;list-style:none}.menu a{text-decoration:none;color:#475569;font-size:14px;font-weight:500}
+.hero{text-align:center;padding:50px 20px 20px}
+.hero h1{font-size:38px;font-weight:800;color:#0f172a}
+.hero p{color:#64748b;margin-top:8px;font-size:16px}
+.container{max-width:1280px;margin:0 auto;padding:0 24px 20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.6);box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:0.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.1);background:#fff}
+.card-img{height:130px;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.content{padding:14px}.tag{font-size:10px;font-weight:700;background:rgba(15,23,42,0.06);padding:4px 8px;border-radius:20px}
+.title{font-size:14px;font-weight:700;color:#0f172a;margin:8px 0 4px;line-height:1.3}.text{font-size:12px;color:#64748b;line-height:1.4;margin-bottom:10px}
+.btn{font-size:11px;font-weight:600;color:#0f172a;text-decoration:none;border:1px solid #e2e8f0;padding:5px 10px;border-radius:999px}
+.bottom-grid{max-width:1280px;margin:20px auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.widget{background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border-radius:16px;padding:16px;border:1px solid rgba(255,255,255,0.6);box-shadow:0 8px 24px rgba(0,0,0,0.05)}
+.widget h3{font-size:13px;font-weight:700;margin-bottom:10px}
+.list{list-style:none}.list li{padding:6px 0;border-bottom:1px solid rgba(0,0,0,0.05);display:flex;justify-content:space-between}.list li:last-child{border:0}
+.list a{font-size:12px;color:#334155;text-decoration:none}
+footer{margin-top:20px;background:rgba(255,255,255,0.8);backdrop-filter:blur(12px);border-top:1px solid rgba(0,0,0,0.06);padding:20px 24px}
+.foot{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:20px}
+.foot h4{font-size:12px;font-weight:700;margin-bottom:8px;color:#0f172a}
+.foot a,.foot p{font-size:12px;color:#64748b;text-decoration:none;line-height:1.6;display:block;margin-bottom:3px}
+@media(max-width:1100px){.grid-4{grid-template-columns:1fr 1fr}.bottom-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.grid-4{grid-template-columns:1fr 1fr;gap:12px}.card-img{height:100px}.title{font-size:13px}.foot{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<h1>WholeTips.com</h1>
-<p>Free Tools - No Login, 100% Private. All tools run in your browser!</p>
+<header><div class="nav"><a class="logo" href="/">Whole<span>Tips</span></a><ul class="menu"><li><a href="/">Home</a></li><li><a href="#">Tech</a></li><li><a href="#">Farming</a></li><li><a href="#">Health</a></li><li><a href="/jpg-compress.html">Tools</a></li></ul></div></header>
+<section class="hero"><h1>Useful tips and free tools, all in one place.</h1><p>Simple guides and handy tools to make your everyday life easier.</p></section>
 
-<div class="tool-box">
-<h3>🔧 JPG Compressor</h3>
-<p>Compress image in your browser - 0 server cost</p>
-<a class="btn" href="jpg-compress.html">Open Tool</a>
+<div class="container">
+<div class="grid-4">
+<div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500" alt="Tools"></div><div class="content"><span class="tag">Free Tools</span><div class="title">JPG, PDF & Image Tools</div><div class="text">Compress and convert files directly in your browser.</div><a class="btn" href="/jpg-compress.html">Open →</a></div></div>
+<div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1499951360447-b19be2fe80f5?w=500" alt="Tech"></div><div class="content"><span class="tag">Tech</span><div class="title">Earn Online from Home</div><div class="text">5 real methods for beginners to start freelancing.</div><a class="btn" href="#">Read →</a></div></div>
+<div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500" alt="Farming"></div><div class="content"><span class="tag">Farming</span><div class="title">Mango Farming Tips</div><div class="text">Water and fertilizer schedule for higher yield.</div><a class="btn" href="#">Read →</a></div></div>
+<div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500" alt="Health"></div><div class="content"><span class="tag">Health</span><div class="title">Morning Water Benefits</div><div class="text">7 reasons to drink water after waking up.</div><a class="btn" href="#">Read →</a></div></div>
+</div>
 </div>
 
-<p>Site is running on Cloudflare + GitHub Pages - FREE!</p>
+<div class="bottom-grid">
+<div class="widget"><h3>Most Viewed</h3><ul class="list"><li><a href="/jpg-compress.html">JPG Compressor Tool</a><span>3.1k</span></li><li><a href="#">Earn Online from Home</a><span>2.4k</span></li><li><a href="#">Mango Farming Tips</a><span>1.8k</span></li></ul></div>
+<div class="widget"><h3>Top Searches</h3><ul class="list"><li><a href="/jpg-compress.html">jpg compress to 100kb</a></li><li><a href="#">pdf to image</a></li><li><a href="#">online earning telugu</a></li></ul></div>
+<div class="widget"><h3>Popular Tools</h3><ul class="list"><li><a href="/jpg-compress.html">• JPG Compressor</a></li><li><a style="color:#94a3b8">• PDF Tools - Soon</a></li></ul></div>
+</div>
+
+<footer><div class="foot"><div><h4>About WholeTips</h4><p>Get useful life tips and Free Online Tools to make your daily tasks easier.</p></div><div><h4>Quick Links</h4><a href="/">Home</a><a href="/jpg-compress.html">Free Tools</a><a href="#">Contact</a></div><div><h4>Categories</h4><a href="#">Tech</a><a href="#">Farming</a><a href="#">Health</a></div><div><h4>Follow Us</h4><a href="#">Facebook</a><a href="#">YouTube</a></div></div></footer>
 </body>
 </html>
